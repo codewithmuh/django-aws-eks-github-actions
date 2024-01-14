@@ -1,3 +1,7 @@
+"""
+Admin config our Admin Panel.
+"""
+
 from django.contrib import admin
 
 from django.contrib.auth import models
@@ -9,8 +13,3 @@ admin.site.index_title = "Weclone to Code With Muh administration portal"
 
 admin.site.register(models.Permission)
 admin.site.register(LogEntry)
-
-
-
-
-

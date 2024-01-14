@@ -14,7 +14,10 @@ from pathlib import Path
 import os
 from decouple import config
 from celery.schedules import crontab
+
+# pylint: disable=wildcard-import
 from .defaults import *
+# pylint: enable=wildcard-import
 
 os.environ['S3_USE_SIGV4'] = 'True'
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -209,10 +212,9 @@ ELASTICSEARCH_DSL = {
     'default': {
         'hosts':  "elasticsearch:9200",
         'timeout': 50,  # Increase timeout to 30 seconds or more
-      
+
     },
 }
-
 
 
 # Celery Beat
