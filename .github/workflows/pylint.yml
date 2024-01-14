@@ -1,6 +1,11 @@
-name: Python Pylint Check
+name: Python Syntax Code Quality Check Workflow
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  # schedule:
+  #     - cron: '34 0 * * 6'
 
 jobs:
   pylint-check:
