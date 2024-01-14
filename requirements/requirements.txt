@@ -68,3 +68,5 @@ vine==5.1.0
 virtualenv==20.24.5
 wcwidth==0.2.12
 whitenoise==6.6.0
+pylint==3.0.3
+gunicorn==20.1.0
