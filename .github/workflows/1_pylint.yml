@@ -9,7 +9,8 @@ on:
 
 jobs:
   pylint-check:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest -- Used to run on Github hosting
+    runs-on: self-hosted
 
     steps:
     - name: Checkout code
